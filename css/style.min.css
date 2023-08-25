@@ -7374,13 +7374,13 @@ body.lock {
   display: flex;
   align-items: center;
 }
-.appointment-calendar .days-container {
-  display: flex;
-}
 @media (max-width: 500px) {
-  .appointment-calendar .days-container {
+  .appointment-calendar {
     justify-content: center;
   }
+}
+.appointment-calendar .days-container {
+  display: flex;
 }
 .appointment-calendar__btn {
   flex: 0 0 16px;
