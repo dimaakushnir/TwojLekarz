@@ -9031,6 +9031,11 @@ body.lock {
   border-radius: 13px !important;
   background: #A394C3;
 }
+@media (min-width: 767.98px) {
+  .filter-content-main-posts__scrollbar {
+    display: none;
+  }
+}
 
 .slide-filter-content-main-posts {
   width: auto !important;
