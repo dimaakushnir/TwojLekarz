@@ -191,10 +191,44 @@
                                 <form action="#" class="top-content-main-appointment__form">
                                     <div class="top-content-main-appointment__item">
                                         <label for="formAppointmentService1"
+                                            class="top-content-main-appointment__label">Город</label>
+                                        <div
+                                            class="top-content-main-appointment__dropdown top-content-main-appointment__dropdown_city dropdown">
+                                            <div class='dropdown__button'>Выберите город</div>
+                                            <ul class="dropdown__list dropdown__list-search">
+                                                <li class="dropdown__list-item" data-dropdown="warszawa">Warszawa</li>
+                                                <li class="dropdown__list-item" data-dropdown="wrocław">Wrocław</li>
+                                                <li class="dropdown__list-item" data-dropdown="poznań">Poznań</li>
+                                                <li class="dropdown__list-item" data-dropdown="trójmiasto">
+                                                    Trójmiasto
+                                                </li>
+                                            </ul>
+                                            <input id="formAppointmentService1" type='text' name='age' value=''
+                                                class='dropdown__input-hidden top-content-main-appointment__input-hidden_city'>
+                                        </div>
+                                    </div>
+                                    <div class="top-content-main-appointment__item">
+                                        <label for="formAppointmentService2"
+                                            class="top-content-main-appointment__label">Категория</label>
+                                        <div
+                                            class="top-content-main-appointment__dropdown top-content-main-appointment__dropdown_category dropdown">
+                                            <div class='dropdown__button'>Выберите категорию</div>
+                                            <ul class="dropdown__list dropdown__list-search">
+                                                <li class="dropdown__list-item" data-dropdown="Value1">Value1</li>
+                                                <li class="dropdown__list-item" data-dropdown="Value2">Value2</li>
+                                                <li class="dropdown__list-item" data-dropdown="Value3">Value3</li>
+                                                <li class="dropdown__list-item" data-dropdown="Value4">Value4</li>
+                                            </ul>
+                                            <input id="formAppointmentService2" type='text' name='age' value='warszawa'
+                                                class='dropdown__input-hidden top-content-main-appointment__input-hidden_category'>
+                                        </div>
+                                    </div>
+                                    <div class="top-content-main-appointment__item">
+                                        <label for="formAppointmentService3"
                                             class="top-content-main-appointment__label">Услуга</label>
                                         <div
                                             class="top-content-main-appointment__dropdown top-content-main-appointment__dropdown_service dropdown">
-                                            <div class='dropdown__button'>Стоматологический обзор</div>
+                                            <div class='dropdown__button'>Выберите услугу</div>
                                             <ul class="dropdown__list dropdown__list-search">
                                                 <li class="dropdown__list-item" data-dropdown="dental-review">
                                                     Стоматологический обзор</li>
@@ -203,34 +237,17 @@
                                                 <li class="dropdown__list-item" data-dropdown="dental-review-3">
                                                     Стоматологический обзор-3</li>
                                             </ul>
-                                            <input id="formAppointmentService1" type='text' name='age'
+                                            <input id="formAppointmentService3" type='text' name='age'
                                                 value='dental-review'
                                                 class='dropdown__input-hidden top-content-main-appointment__input-hidden_service'>
                                         </div>
                                     </div>
                                     <div class="top-content-main-appointment__item">
-                                        <label for="formAppointmentService2"
-                                            class="top-content-main-appointment__label">Город</label>
-                                        <div
-                                            class="top-content-main-appointment__dropdown top-content-main-appointment__dropdown_city dropdown">
-                                            <div class='dropdown__button'>Warszawa</div>
-                                            <ul class="dropdown__list dropdown__list-search">
-                                                <li class="dropdown__list-item" data-dropdown="warszawa">Warszawa</li>
-                                                <li class="dropdown__list-item" data-dropdown="wrocław">Wrocław</li>
-                                                <li class="dropdown__list-item" data-dropdown="poznań">Poznań</li>
-                                                <li class="dropdown__list-item" data-dropdown="trójmiasto">Trójmiasto
-                                                </li>
-                                            </ul>
-                                            <input id="formAppointmentService2" type='text' name='age' value='warszawa'
-                                                class='dropdown__input-hidden top-content-main-appointment__input-hidden_city'>
-                                        </div>
-                                    </div>
-                                    <div class="top-content-main-appointment__item">
-                                        <label for="formAppointmentService3"
+                                        <label for="formAppointmentService4"
                                             class="top-content-main-appointment__label">Клиника</label>
                                         <div
                                             class="top-content-main-appointment__dropdown top-content-main-appointment__dropdown_clinic dropdown">
-                                            <div class='dropdown__button'>Warszawa-1</div>
+                                            <div class='dropdown__button'>Выберите клинику</div>
                                             <ul class="dropdown__list dropdown__list-search">
                                                 <li class="dropdown__list-item" data-city="warszawa"
                                                     data-dropdown="warszawa-1">Warszawa-1
@@ -255,7 +272,7 @@
                                                     Trójmiasto-2
                                                 </li>
                                             </ul>
-                                            <input id="formAppointmentService3" type='text' name='age' value='warszawa'
+                                            <input id="formAppointmentService4" type='text' name='age' value='warszawa'
                                                 class='dropdown__input-hidden top-content-main-appointment__input-hidden_clinic'>
                                         </div>
                                     </div>
@@ -355,6 +372,14 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-main-appointment__message message-content-main-appointment">
+                        <div class="message-content-main-appointment__container container">
+                            <div class="message-content-main-appointment__body">
+                                По вашему запросу ничего не найдено, попробуйте еще раз или свяжитесь с нашим
+                                консультантом, мы будем рады вам помочь
                             </div>
                         </div>
                     </div>

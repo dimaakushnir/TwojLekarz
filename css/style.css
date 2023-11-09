@@ -7553,6 +7553,9 @@ body.lock {
 .content-main-appointment__top:not(:last-child) {
   margin: 0 0 20px 0;
 }
+.content-main-appointment__body:not(:last-child) {
+  margin: 0 0 20px 0;
+}
 .top-content-main-appointment__body {
   padding: 0 70px;
 }
@@ -7625,28 +7628,38 @@ body.lock {
   }
 }
 .top-content-main-appointment__form {
+  max-width: 975px;
+  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   font-size: 0;
-  flex-wrap: wrap;
   align-items: flex-end;
 }
 .top-content-main-appointment__form:not(:last-child) {
   margin: 0 0 20px 0;
 }
+@media (max-width: 1322px) {
+  .top-content-main-appointment__form {
+    max-width: 980px;
+  }
+}
+@media (max-width: 1221.98px) {
+  .top-content-main-appointment__form {
+    max-width: 920px;
+  }
+}
 @media (max-width: 991.98px) {
   .top-content-main-appointment__form {
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    max-width: 350px;
   }
 }
 .top-content-main-appointment__item {
-  margin: 0 20px 20px 0;
+  margin: 0 5px 20px 0;
+  flex: 0 0 21.5%;
 }
 @media (max-width: 991.98px) {
   .top-content-main-appointment__item {
@@ -7683,6 +7696,7 @@ body.lock {
   width: auto;
 }
 .top-content-main-appointment__dropdown .dropdown__button {
+  white-space: nowrap;
   height: 40px;
   font-size: 16px;
   border: 1px solid #666666;
@@ -7707,9 +7721,13 @@ body.lock {
 }
 .top-content-main-appointment__dropdown .dropdown__list {
   top: 45px;
+  min-width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
 }
 .top-content-main-appointment__dropdown .dropdown__list-item {
-  height: 40px;
+  min-height: 40px;
+  height: auto;
   font-size: 16px;
   padding: 5px 18px 5px 12px;
 }
@@ -7723,21 +7741,20 @@ body.lock {
     font-size: 14px;
   }
 }
-.top-content-main-appointment__dropdown_service {
-  min-width: 270px;
+.top-content-main-appointment__dropdown_service .dropdown__list {
+  width: 500px;
 }
-.top-content-main-appointment__dropdown_city {
-  min-width: 150px;
-}
-.top-content-main-appointment__dropdown_clinic {
-  min-width: 175px;
+.top-content-main-appointment__dropdown_category .dropdown__list {
+  width: 500px;
 }
 .top-content-main-appointment__btn {
+  flex: 0 0 14%;
   margin: 0 0 20px 0;
 }
 @media (max-width: 991.98px) {
   .top-content-main-appointment__btn {
     width: 100%;
+    flex: 1 1 auto;
   }
 }
 
@@ -7961,6 +7978,27 @@ body.lock {
 @media (max-width: 991.98px) {
   .visits-body-content-main-appointment__content .item-search-services__price {
     margin: 0 0 12px 0;
+  }
+}
+
+.message-content-main-appointment__body {
+  max-width: 700px;
+  padding: 0 70px;
+  font-weight: 700;
+  line-height: 130%;
+  color: red;
+}
+.message-content-main-appointment__body.show {
+  display: block;
+}
+@media (max-width: 1322px) {
+  .message-content-main-appointment__body {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1221.98px) {
+  .message-content-main-appointment__body {
+    padding: 0;
   }
 }
 
