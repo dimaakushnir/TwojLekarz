@@ -7696,7 +7696,6 @@ body.lock {
   width: auto;
 }
 .top-content-main-appointment__dropdown .dropdown__button {
-  white-space: nowrap;
   height: 40px;
   font-size: 16px;
   border: 1px solid #666666;
@@ -7712,6 +7711,8 @@ body.lock {
 @media (max-width: 991.98px) {
   .top-content-main-appointment__dropdown .dropdown__button {
     font-size: 15px;
+    min-height: 40px;
+    height: auto;
   }
 }
 @media (max-width: 479.98px) {
@@ -7741,11 +7742,15 @@ body.lock {
     font-size: 14px;
   }
 }
-.top-content-main-appointment__dropdown_service .dropdown__list {
-  width: 500px;
+@media (min-width: 530px) {
+  .top-content-main-appointment__dropdown_service .dropdown__list {
+    width: 500px;
+  }
 }
-.top-content-main-appointment__dropdown_category .dropdown__list {
-  width: 500px;
+@media (min-width: 530px) {
+  .top-content-main-appointment__dropdown_category .dropdown__list {
+    width: 500px;
+  }
 }
 .top-content-main-appointment__btn {
   flex: 0 0 14%;
